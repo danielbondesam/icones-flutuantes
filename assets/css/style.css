@@ -1,0 +1,47 @@
+html {
+    padding: 50px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+.content {
+    display: inline-flex;
+    border-bottom: 4px solid #000000;
+    border-radius: 5px;
+}
+
+.content img {
+    width: 60px;
+    filter: drop-shadow(0px 0px 1px #000000);
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%, 
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+.content img:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.content img:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.content img:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.content img:nth-child(5) {
+    animation-delay: .8s;
+}
